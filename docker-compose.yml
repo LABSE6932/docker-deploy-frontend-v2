@@ -1,0 +1,10 @@
+services:
+  frontend:
+    image: tunzidi/234-deploylab-frontend:latest
+    pull_policy: always
+    ports:
+      - "8081:80"
+    restart: unless-stopped
+    environment:
+      - VITE_GRAPHQL_URI=http://98.92.17.186:8082/graphql
+      - VITE_SERVER_URI=http://98.92.17.186:8082
