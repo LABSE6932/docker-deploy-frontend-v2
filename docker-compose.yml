@@ -3,7 +3,7 @@ services:
     image: tunzidi/234-deploylab-frontend:latest
     pull_policy: always
     ports:
-      - "8081:80"
+      - "8081:8080"
     restart: unless-stopped
     environment:
       - VITE_GRAPHQL_URI=http://44.197.206.179:8082/graphql
